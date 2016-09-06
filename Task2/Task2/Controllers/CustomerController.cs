@@ -12,6 +12,8 @@ namespace Task2.Controllers
         // GET: Customer
         [HttpGet]
         [ActionName("User-List")]
+        [Route("~/User/User-List")]
+        [Route("~/Customer/User-List")]
         public async Task<ActionResult> Index()
         {
             var result = await UserRepository.GetAll();
@@ -20,6 +22,8 @@ namespace Task2.Controllers
 
         [HttpGet]
         [ActionName("Add-User")]
+        [Route("~/User/Add-User")]
+        [Route("~/Customer/Add-User")]
         public ActionResult Create()
         {
             return View("Create");
@@ -27,6 +31,8 @@ namespace Task2.Controllers
 
         [HttpPost]
         [ActionName("Add-User")]
+        [Route("~/User/Add-User")]
+        [Route("~/Customer/Add-User")]
         public async Task<ActionResult> Create(User user)
         {
             await UserRepository.Add(user);
@@ -35,6 +41,8 @@ namespace Task2.Controllers
 
         [HttpPost]
         [ActionName("User-List")]
+        [Route("~/User/User-List")]
+        [Route("~/Customer/User-List")]
         public JsonResult Index1()
         {
             var result = UserRepository.GetAll();
