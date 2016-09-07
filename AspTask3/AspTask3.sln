@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25123.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspTask3", "AspTask3\AspTask3.csproj", "{699152A7-4D8D-4F3C-B8DF-7B7D73B0E6D0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{699152A7-4D8D-4F3C-B8DF-7B7D73B0E6D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{699152A7-4D8D-4F3C-B8DF-7B7D73B0E6D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{699152A7-4D8D-4F3C-B8DF-7B7D73B0E6D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{699152A7-4D8D-4F3C-B8DF-7B7D73B0E6D0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,36 @@
+﻿@{
+    ViewBag.Title = "Person";
+}
+
+<h2>Person</h2>
+<h2>Some info</h2>
+
+@section Person{
+    <div class="navbar navbar-inverse navbar-fixed-top" id="nav">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            @Html.Action("Header", "Custom")
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav"></ul>
+        </div>
+    </div>
+</div>
+}
+
+@section Footer{
+    @using (Html.BeginForm("Footer","Custom"))
+    {
+        <div class="panel-footer" id="Footer">
+            <h2>Wanna join other side?</h2>
+            <input type="submit" value="Yes" name="value" class="btn btn-default" id="btnChangeSide"/>
+        </div>
+    }
+}
+
+
