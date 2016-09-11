@@ -1,0 +1,98 @@
+﻿@model Task4.Models.Person
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Person</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.FirstName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FirstName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LastName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LastName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DOB)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DOB)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Role)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Role)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.HomeAddress.Line1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.HomeAddress.Line1)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.HomeAddress.Line2)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.HomeAddress.Line2)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.HomeAddress.City)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.HomeAddress.City)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.HomeAddress.Country)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.HomeAddress.Country)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.HomeAddress.PostalCode)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.HomeAddress.PostalCode)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.HomeAddress.AddressSummary)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.HomeAddress.AddressSummary)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
